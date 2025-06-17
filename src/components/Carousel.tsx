@@ -7,7 +7,7 @@ const Carousel = () => {
 
   const slides = [
     {
-      image: "/lovable-uploads/b7f32e79-1fe8-4181-9803-594a959e58fd.png",
+      image: "/lovable-uploads/4aa7fcd2-c1ef-4869-af5f-1b6dfdf7c2c7.png",
       title: "Welcome to ICAISD-2025",
       subtitle: "International Conference on AI for Sustainable Development"
     },
@@ -17,7 +17,7 @@ const Carousel = () => {
       subtitle: "Bringing together innovative scientists and researchers"
     },
     {
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "/lovable-uploads/b7f32e79-1fe8-4181-9803-594a959e58fd.png",
       title: "SCOPUS Publication",
       subtitle: "All accepted papers published in SCOPUS proceedings"
     }
@@ -54,8 +54,8 @@ const Carousel = () => {
             <div className="absolute inset-0 bg-sustainable-green bg-opacity-70"></div>
             <div className="absolute inset-0 flex items-center justify-center text-center text-white">
               <div className="max-w-4xl px-4">
-                <h1 className="neo-h1 mb-4 font-inter font-bold">{slide.title}</h1>
-                <p className="neo-h3 font-normal font-inter">{slide.subtitle}</p>
+                <h1 className="neo-h1 mb-4 font-inter font-bold text-white">{slide.title}</h1>
+                <p className="neo-h3 font-normal font-inter text-white">{slide.subtitle}</p>
               </div>
             </div>
           </div>

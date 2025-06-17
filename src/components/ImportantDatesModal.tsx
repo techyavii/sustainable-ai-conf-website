@@ -29,7 +29,7 @@ const ImportantDatesModal = () => {
       {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4 relative">
+          <div className="bg-white rounded-lg p-8 max-w-4xl w-full mx-4 relative">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
@@ -39,11 +39,11 @@ const ImportantDatesModal = () => {
             
             <h2 className="text-2xl font-inter font-bold text-sustainable-green mb-6">Important Dates</h2>
             
-            <div className="space-y-4">
+            <div className="grid md:grid-cols-5 gap-4">
               {importantDates.map((item, index) => (
-                <div key={index} className="border-l-4 border-accent-blue pl-4 py-2">
-                  <h3 className="font-inter font-semibold text-slate-gray">{item.event}</h3>
-                  <p className="text-accent-blue font-medium">{item.date}</p>
+                <div key={index} className="border-l-4 border-accent-blue pl-4 py-2 bg-soft-sand rounded-r-lg">
+                  <h3 className="font-inter font-semibold text-slate-gray text-sm mb-2">{item.event}</h3>
+                  <p className="text-accent-blue font-medium text-sm">{item.date}</p>
                 </div>
               ))}
             </div>

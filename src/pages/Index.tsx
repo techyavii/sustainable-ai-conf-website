@@ -23,23 +23,23 @@ const Index = () => {
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Conference Info Section */}
         <section className="mb-16">
-          <div className="bg-neo-accent rounded-lg p-8">
-            <h2 className="neo-h2 text-neo-primary mb-6 text-center">ICAISD-2025 will be organised in Online Mode</h2>
+          <div className="bg-soft-sand rounded-lg p-8">
+            <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6 text-center">ICAISD-2025 will be organised in Online Mode</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-neo">
-                <FileText className="h-12 w-12 text-neo-secondary mx-auto mb-4" />
-                <h3 className="neo-h3 text-neo-primary mb-2">SCOPUS Publication</h3>
-                <p className="neo-body text-neo-muted">All accepted papers will be published in SCOPUS proceeding, SCI journals and SCOPUS journals</p>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <FileText className="h-12 w-12 text-accent-blue mx-auto mb-4" />
+                <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">SCOPUS Publication</h3>
+                <p className="text-slate-gray font-ibm-plex">All accepted papers will be published in SCOPUS proceeding, SCI journals and SCOPUS journals</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-neo">
-                <Users className="h-12 w-12 text-neo-secondary mx-auto mb-4" />
-                <h3 className="neo-h3 text-neo-primary mb-2">Expert Review</h3>
-                <p className="neo-body text-neo-muted">Double blinded peer review process by international experts</p>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <Users className="h-12 w-12 text-accent-blue mx-auto mb-4" />
+                <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">Expert Review</h3>
+                <p className="text-slate-gray font-ibm-plex">Double blinded peer review process by international experts</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-neo">
-                <Calendar className="h-12 w-12 text-neo-secondary mx-auto mb-4" />
-                <h3 className="neo-h3 text-neo-primary mb-2">Online Mode</h3>
-                <p className="neo-body text-neo-muted">Convenient online participation via ZOOM platform</p>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <Calendar className="h-12 w-12 text-accent-blue mx-auto mb-4" />
+                <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">Online Mode</h3>
+                <p className="text-slate-gray font-ibm-plex">Convenient online participation via ZOOM platform</p>
               </div>
             </div>
           </div>
@@ -47,19 +47,19 @@ const Index = () => {
 
         {/* Indexing Details */}
         <section className="mb-16">
-          <div className="text-center bg-white p-8 rounded-lg shadow-sm border border-neo">
-            <h2 className="neo-h2 text-neo-primary mb-4">Indexing Details</h2>
-            <p className="neo-body text-neo-muted">
+          <div className="text-center bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+            <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-4">Indexing Details</h2>
+            <p className="text-lg text-slate-gray font-ibm-plex">
               <strong>INSPEC, Google Scholar</strong> and other leading databases with a <strong>DOI Number</strong>
             </p>
           </div>
         </section>
 
-        {/* About Section */}
-        <section className="mb-16">
-          <h2 className="neo-h2 text-neo-primary mb-6">About the Conference</h2>
-          <div className="bg-white p-8 rounded-lg shadow-sm border border-neo">
-            <p className="neo-body text-neo-muted leading-relaxed">
+        {/* About Section - Centered */}
+        <section className="mb-16 text-center">
+          <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">About the Conference</h2>
+          <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 max-w-5xl mx-auto">
+            <p className="text-lg text-slate-gray font-ibm-plex leading-relaxed text-left">
               ICAISD 2025 is organised with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Sciences, Computational Methods and Techniques to a common platform. All the accepted papers (after double blinded peer review) will be published in Adroid Conference Series (Indexing: INSPEC, Google Scholar and other leading databases with a DOI Number); All books published in the series are submitted for consideration in SCOPUS) and some high-quality selected papers will be published in the SCOPUS indexed Proceedings.
             </p>
           </div>
@@ -67,13 +67,13 @@ const Index = () => {
 
         {/* Important Dates */}
         <section className="mb-16">
-          <h2 className="neo-h2 text-neo-primary mb-6 text-center">Important Dates</h2>
-          <div className="bg-neo-accent p-8 rounded-lg">
+          <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6 text-center">Important Dates</h2>
+          <div className="bg-soft-sand p-8 rounded-lg">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {importantDates.map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-neo text-center">
-                  <h3 className="neo-h3 text-neo-primary mb-2">{item.event}</h3>
-                  <p className="neo-body text-neo-secondary font-semibold">{item.date}</p>
+                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
+                  <h3 className="text-lg font-inter font-semibold text-sustainable-green mb-2">{item.event}</h3>
+                  <p className="text-accent-blue font-ibm-plex font-semibold">{item.date}</p>
                 </div>
               ))}
             </div>
@@ -82,14 +82,14 @@ const Index = () => {
 
         {/* CTA Section */}
         <section className="text-center">
-          <div className="bg-neo-primary text-white p-8 rounded-lg">
-            <h2 className="neo-h2 mb-4">Ready to Submit Your Paper?</h2>
-            <p className="neo-body mb-6">Join researchers from around the world at ICAISD-2025</p>
+          <div className="bg-sustainable-green text-white p-8 rounded-lg">
+            <h2 className="text-3xl font-inter font-bold mb-4 text-white">Ready to Submit Your Paper?</h2>
+            <p className="text-lg mb-6 font-ibm-plex text-white">Join researchers from around the world at ICAISD-2025</p>
             <a 
               href="https://www.adroidcms.com/submit-paper/ICAISD2025"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-neo-secondary text-white px-8 py-3 rounded-lg neo-button hover:bg-opacity-90 transition-colors"
+              className="inline-block bg-accent-blue text-white px-8 py-3 rounded-lg font-inter font-semibold hover:bg-blue-600 transition-colors"
             >
               Submit Your Paper
             </a>

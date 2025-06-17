@@ -3,9 +3,9 @@ import React from 'react';
 
 const Marquee = () => {
   return (
-    <div className="bg-neo-primary text-white py-3 overflow-hidden">
+    <div className="bg-soft-sand py-3 overflow-hidden border-t border-b border-gray-200">
       <div className="marquee whitespace-nowrap">
-        <span className="neo-button text-sm">
+        <span className="text-sustainable-green font-inter font-semibold text-sm">
           🎉 ALL ACCEPTED PAPERS WILL BE PUBLISHED IN SCOPUS PROCEEDING, SCI JOURNALS AND SCOPUS JOURNALS 🎉
         </span>
       </div>

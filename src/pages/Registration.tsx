@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 
@@ -57,12 +56,25 @@ const Registration = () => {
 
         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-8">
           <h2 className="neo-h2 text-sustainable-green mb-6">Registration Process</h2>
-          <p className="neo-body text-slate-gray leading-relaxed mb-4">
-            <strong>Step 1 – Registration Fee:</strong> It is mandatory for at least one author of an accepted paper to register in order for the paper to appear in the proceedings and included in the Technical Program. Fee includes listing the papers online in the International Journal/Conference Proceedings.
-          </p>
-          <p className="neo-body text-slate-gray leading-relaxed">
-            Kindly pay the registration fees through online transaction only and mail us the receipt/transaction number along with your paper id and registered author id card.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div>
+              <p className="neo-body text-slate-gray leading-relaxed mb-4">
+                <strong>Step 1 – Registration Fee:</strong> It is mandatory for at least one author of an accepted paper to register in order for the paper to appear in the proceedings and included in the Technical Program. Fee includes listing the papers online in the International Journal/Conference Proceedings.
+              </p>
+              <p className="neo-body text-slate-gray leading-relaxed">
+                Kindly pay the registration fees through online transaction only and mail us the receipt/transaction number along with your paper id and registered author id card.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="neo-h3 text-sustainable-green mb-4">Quick Registration</h3>
+              <img 
+                src="/lovable-uploads/007f3735-c7aa-4913-93fa-08c32237041d.png" 
+                alt="Registration QR Code" 
+                className="w-48 h-48 mx-auto mb-4 border-2 border-gray-200 rounded-lg p-2"
+              />
+              <p className="neo-caption text-slate-gray">Scan QR code for quick registration</p>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">

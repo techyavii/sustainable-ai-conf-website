@@ -16,7 +16,9 @@ const Index = () => {
 
   return (
     <Layout>
-      <Carousel />
+      <div className="mb-8">
+        <Carousel />
+      </div>
       <Marquee />
       
       {/* Main Content */}
@@ -48,7 +50,19 @@ const Index = () => {
         {/* Indexing Details */}
         <section className="mb-16">
           <div className="text-center bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-            <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-4">Indexing Details</h2>
+            <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">Indexing Details</h2>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
+              <img 
+                src="/lovable-uploads/41bbff18-af42-4f53-a22e-92950bf17ec2.png" 
+                alt="IET Inspec" 
+                className="h-12 object-contain"
+              />
+              <img 
+                src="/lovable-uploads/781740f2-f7da-48f1-8b1e-87a7ab8e6c8e.png" 
+                alt="Google Scholar" 
+                className="h-12 object-contain"
+              />
+            </div>
             <p className="text-lg text-slate-gray font-ibm-plex">
               <strong>INSPEC, Google Scholar</strong> and other leading databases with a <strong>DOI Number</strong>
             </p>

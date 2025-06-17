@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Calendar, X } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const ImportantDatesModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,13 +18,10 @@ const ImportantDatesModal = () => {
       {/* Fixed Vertical Button on Left Border */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-sustainable-green text-white p-2 rounded-r-lg shadow-lg hover:bg-opacity-90 transition-all z-40 font-inter font-semibold"
+        className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-sustainable-green text-white p-3 rounded-r-lg shadow-lg hover:bg-opacity-90 transition-all z-40 font-inter font-semibold"
         style={{ writingMode: 'vertical-lr', textOrientation: 'mixed' }}
       >
-        <div className="flex flex-col items-center space-y-2">
-          <Calendar className="h-5 w-5" />
-          <span className="text-sm whitespace-nowrap">Important Dates</span>
-        </div>
+        <span className="text-sm whitespace-nowrap">Important Dates</span>
       </button>
 
       {/* Modal */}

@@ -3,6 +3,15 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { Download, FileText } from 'lucide-react';
 
+const handleDownload = (filePath) => {
+  const link = document.createElement('a');
+  link.href = filePath;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
 const Downloads = () => {
   return (
     <Layout>
@@ -21,7 +30,7 @@ const Downloads = () => {
                 Download the official Springer paper template for ICAISD-2025. 
                 Papers must follow this format (minimum 8 pages, maximum 12 pages).
               </p>
-              <button className="bg-sustainable-green text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center mx-auto font-inter font-semibold">
+              <button onClick={() => handleDownload('/downloads/ACS_EST_Conf_Article_Template.docx')} className="bg-sustainable-green text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center mx-auto font-inter font-semibold">
                 <Download className="h-5 w-5 mr-2" />
                 Download Template
               </button>

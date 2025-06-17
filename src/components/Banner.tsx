@@ -10,12 +10,12 @@ const Banner = () => {
       >
         <div className="absolute inset-0 bg-sustainable-green bg-opacity-80"></div>
         <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-          <div className="max-w-4xl px-4">
-            <div className="neo-h3 mb-1 text-white max-md:text-base">
+          <div className="max-w-7xl px-4 ">
+            <div className="neo-h3 mb-1 text-white max-md:text-base md:text-3xl">
               International Conference on Artificial Intelligence for Sustainable Development
             </div>
-            <div className="neo-h3 mb-2 text-white max-md:text-base">(ICAISD-2025)</div>
-            <div className="neo-body font-semibold text-white max-md:text-base">
+            <div className="neo-h3 mb-2 text-white max-md:text-base md:text-3xl">(ICAISD-2025)</div>
+            <div className="neo-body font-semibold text-white max-md:text-base md:text-2xl">
               October 25-26th, 2025 | Mode: ONLINE (ZOOM)
             </div>
           </div>

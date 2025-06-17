@@ -1,0 +1,138 @@
+
+import React from 'react';
+import Layout from '../components/Layout';
+
+const Registration = () => {
+  const registrationFees = [
+    {
+      category: "Research Scholar/Student from INDIA",
+      early: "INR 4000",
+      late: "INR 5000"
+    },
+    {
+      category: "Academician from INDIA",
+      early: "INR 5000",
+      late: "INR 6000"
+    },
+    {
+      category: "Industrial Participants from INDIA",
+      early: "INR 6000",
+      late: "INR 7000"
+    },
+    {
+      category: "Foreigner Research Scholar/Student (Outside India)",
+      early: "USD 100",
+      late: "USD 120"
+    },
+    {
+      category: "Foreigner Academician (Outside India)",
+      early: "USD 120",
+      late: "USD 150"
+    },
+    {
+      category: "Foreigner Industrial Participant (Outside India)",
+      early: "USD 150",
+      late: "USD 180"
+    }
+  ];
+
+  const benefits = [
+    "Access to Keynote talks",
+    "Access to paper presentation sessions",
+    "Networking Sessions",
+    "Conference lunch and refreshment*",
+    "Tea and Coffee Breaks*",
+    "Conference Kit*",
+    "Pre-Proceeding (collection of Abstracts only)*",
+    "Participation Certificate"
+  ];
+
+  return (
+    <Layout>
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h1 className="neo-h1 text-neo-primary mb-4">Registration</h1>
+          <div className="w-24 h-1 bg-neo-secondary mx-auto mb-6"></div>
+        </div>
+
+        <div className="bg-white p-8 rounded-lg shadow-sm border border-neo mb-8">
+          <h2 className="neo-h2 text-neo-primary mb-6">Registration Process</h2>
+          <p className="neo-body text-neo-muted leading-relaxed mb-4">
+            <strong>Step 1 – Registration Fee:</strong> It is mandatory for at least one author of an accepted paper to register in order for the paper to appear in the proceedings and included in the Technical Program. Fee includes listing the papers online in the International Journal/Conference Proceedings.
+          </p>
+          <p className="neo-body text-neo-muted leading-relaxed">
+            Kindly pay the registration fees through online transaction only and mail us the receipt/transaction number along with your paper id and registered author id card.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8 mb-8">
+          <div className="bg-neo-accent p-8 rounded-lg">
+            <h2 className="neo-h2 text-neo-primary mb-6">Registration Benefits</h2>
+            <p className="neo-body text-neo-muted mb-4">
+              <strong>Author/Co-Author Registration Fee Includes:</strong>
+            </p>
+            <ul className="space-y-2">
+              {benefits.map((benefit, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-neo-secondary mr-2">•</span>
+                  <span className="neo-body text-neo-muted">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="bg-neo-primary text-white p-8 rounded-lg">
+            <h2 className="neo-h2 mb-6">Important Note</h2>
+            <p className="neo-body mb-4">
+              **The Conference will be in Hybrid mode
+            </p>
+            <p className="neo-body">
+              <strong>Conference Venue:</strong> ONLINE MODE via ZOOM Platform
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-sm border border-neo overflow-hidden mb-8">
+          <div className="bg-neo-primary text-white p-6">
+            <h2 className="neo-h2 text-center">Registration Fee For ICAISD-2025</h2>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead className="bg-neo-accent">
+                <tr>
+                  <th className="px-6 py-4 text-left neo-h3 text-neo-primary">Category</th>
+                  <th className="px-6 py-4 text-center neo-h3 text-neo-primary">Early Registration<br/>(Before 30th July 2025)</th>
+                  <th className="px-6 py-4 text-center neo-h3 text-neo-primary">Late Registration<br/>(After 30th July 2025)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {registrationFees.map((fee, index) => (
+                  <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                    <td className="px-6 py-4 neo-body text-neo-muted">{fee.category}</td>
+                    <td className="px-6 py-4 text-center neo-body font-semibold text-neo-secondary">{fee.early}</td>
+                    <td className="px-6 py-4 text-center neo-body font-semibold text-neo-secondary">{fee.late}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="text-center bg-neo-accent p-8 rounded-lg">
+          <h2 className="neo-h2 text-neo-primary mb-4">Ready to Register?</h2>
+          <p className="neo-body text-neo-muted mb-6">
+            Contact us for payment details and registration process
+          </p>
+          <a 
+            href="mailto:icaisd.conference@gmail.com"
+            className="inline-block bg-neo-secondary text-white px-8 py-3 rounded-lg neo-button hover:bg-opacity-90 transition-colors"
+          >
+            Contact for Registration
+          </a>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default Registration;

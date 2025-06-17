@@ -22,20 +22,22 @@ const Navigation = () => {
     },
     { name: 'Registration', path: '/registration' },
     { name: 'Publications', path: '/publications' },
-    { name: 'Privacy Policy', path: '/privacy-policy' }
+    { name: 'Committee', path: '/committee' },
+    { name: 'Venue', path: '/venue' },
+    { name: 'Downloads', path: '/downloads' }
   ];
 
   return (
-    <nav className="bg-neo-primary text-white shadow-lg relative z-50">
+    <nav className="bg-sustainable-green text-white shadow-lg relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="neo-brand text-white hover:text-neo-secondary transition-colors">
+          <Link to="/" className="text-xl font-inter font-bold text-white hover:text-accent-blue transition-colors">
             ICAISD-2025
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
                 {item.hasDropdown ? (
@@ -44,7 +46,7 @@ const Navigation = () => {
                     onMouseEnter={() => setIsPapersDropdownOpen(true)}
                     onMouseLeave={() => setIsPapersDropdownOpen(false)}
                   >
-                    <button className="neo-button text-sm text-white hover:text-neo-secondary transition-colors flex items-center">
+                    <button className="text-sm font-inter font-medium text-white hover:text-accent-blue transition-colors flex items-center">
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
@@ -54,7 +56,7 @@ const Navigation = () => {
                           <Link
                             key={dropdownItem.name}
                             to={dropdownItem.path}
-                            className="block px-4 py-2 text-sm text-neo-primary hover:bg-neo-accent transition-colors"
+                            className="block px-4 py-2 text-sm text-sustainable-green hover:bg-soft-sand transition-colors font-inter"
                           >
                             {dropdownItem.name}
                           </Link>
@@ -65,10 +67,10 @@ const Navigation = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`neo-button text-sm transition-colors ${
+                    className={`text-sm font-inter font-medium transition-colors ${
                       isActive(item.path) 
-                        ? 'text-neo-secondary' 
-                        : 'text-white hover:text-neo-secondary'
+                        ? 'text-accent-blue' 
+                        : 'text-white hover:text-accent-blue'
                     }`}
                   >
                     {item.name}
@@ -82,7 +84,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-neo-secondary transition-colors"
+              className="text-white hover:text-accent-blue transition-colors"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -91,7 +93,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-neo-primary border-t border-neo-secondary">
+          <div className="md:hidden bg-sustainable-green border-t border-gray-600">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <div key={item.name}>
@@ -99,7 +101,7 @@ const Navigation = () => {
                     <div>
                       <button 
                         onClick={() => setIsPapersDropdownOpen(!isPapersDropdownOpen)}
-                        className="w-full text-left neo-button text-sm text-white hover:text-neo-secondary transition-colors flex items-center justify-between px-3 py-2"
+                        className="w-full text-left text-sm font-inter font-medium text-white hover:text-accent-blue transition-colors flex items-center justify-between px-3 py-2"
                       >
                         {item.name}
                         <ChevronDown className={`h-4 w-4 transform transition-transform ${isPapersDropdownOpen ? 'rotate-180' : ''}`} />
@@ -110,7 +112,7 @@ const Navigation = () => {
                             <Link
                               key={dropdownItem.name}
                               to={dropdownItem.path}
-                              className="block px-3 py-2 text-sm text-white hover:text-neo-secondary transition-colors"
+                              className="block px-3 py-2 text-sm text-white hover:text-accent-blue transition-colors font-inter"
                               onClick={() => setIsMenuOpen(false)}
                             >
                               {dropdownItem.name}
@@ -122,10 +124,10 @@ const Navigation = () => {
                   ) : (
                     <Link
                       to={item.path}
-                      className={`block px-3 py-2 neo-button text-sm transition-colors ${
+                      className={`block px-3 py-2 text-sm font-inter font-medium transition-colors ${
                         isActive(item.path) 
-                          ? 'text-neo-secondary' 
-                          : 'text-white hover:text-neo-secondary'
+                          ? 'text-accent-blue' 
+                          : 'text-white hover:text-accent-blue'
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                     >

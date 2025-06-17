@@ -3,47 +3,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* NeoTech Minimal Theme Color Palette and Typography */
+/* Enhanced Design System with New Color Palette */
 
 @layer base {
   :root {
-    /* NeoTech Minimal Color System */
-    --neo-primary: #001F3F;
-    --neo-secondary: #00BFFF;
-    --neo-background: #FFFFFF;
-    --neo-accent-light: #F5F5F5;
-    --neo-text-primary: #222222;
-    --neo-text-muted: #666666;
-    --neo-border: #E0E0E0;
+    /* Enhanced Color System */
+    --sustainable-green: #0f5132;
+    --slate-gray: #334155;
+    --soft-sand: #fefae0;
+    --accent-blue: #60a5fa;
 
-    /* shadcn/ui variables mapped to NeoTech theme */
+    /* shadcn/ui variables mapped to enhanced theme */
     --background: 0 0% 100%;
     --foreground: 210 9% 13%;
 
-    --card: 0 0% 96%;
+    --card: 0 0% 98%;
     --card-foreground: 210 9% 13%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 210 9% 13%;
 
-    --primary: 210 100% 12%;
+    --primary: 152 84% 15%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 195 100% 50%;
+    --secondary: 214 100% 69%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 45 100% 96%;
+    --muted-foreground: 215 25% 27%;
 
-    --accent: 0 0% 96%;
-    --accent-foreground: 210 9% 13%;
+    --accent: 45 100% 96%;
+    --accent-foreground: 152 84% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 195 100% 50%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 100% 69%;
 
     --radius: 0.5rem;
 
@@ -58,15 +55,15 @@
   }
 
   .dark {
-    --background: 210 100% 12%;
+    --background: 152 84% 15%;
     --foreground: 0 0% 98%;
-    --card: 210 100% 12%;
+    --card: 152 84% 15%;
     --card-foreground: 0 0% 98%;
-    --popover: 210 100% 12%;
+    --popover: 152 84% 15%;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
-    --primary-foreground: 210 100% 12%;
-    --secondary: 195 100% 50%;
+    --primary-foreground: 152 84% 15%;
+    --secondary: 214 100% 69%;
     --secondary-foreground: 0 0% 100%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -87,12 +84,12 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
   }
 
-  /* NeoTech Typography System */
+  /* Enhanced Typography System */
   .neo-brand {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: clamp(24px, 4vw, 32px);
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -100,54 +97,45 @@
   }
 
   .neo-h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: clamp(36px, 6vw, 48px);
     font-weight: 700;
     letter-spacing: 0.2px;
   }
 
   .neo-h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: clamp(28px, 4vw, 32px);
     font-weight: 600;
     letter-spacing: 0.1px;
   }
 
   .neo-h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: clamp(22px, 3vw, 24px);
     font-weight: 500;
   }
 
   .neo-body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: clamp(16px, 2vw, 18px);
     font-weight: 400;
     line-height: 1.6;
   }
 
   .neo-caption {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
   }
 
   .neo-button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: clamp(14px, 2vw, 16px);
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-
-  /* Custom NeoTech Colors */
-  .bg-neo-primary { background-color: var(--neo-primary); }
-  .bg-neo-secondary { background-color: var(--neo-secondary); }
-  .bg-neo-accent { background-color: var(--neo-accent-light); }
-  .text-neo-primary { color: var(--neo-primary); }
-  .text-neo-secondary { color: var(--neo-secondary); }
-  .text-neo-muted { color: var(--neo-text-muted); }
-  .border-neo { border-color: var(--neo-border); }
 
   /* Marquee Animation */
   @keyframes marquee {
@@ -162,5 +150,15 @@
   /* Smooth scroll */
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Enhanced Hover Effects */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 }

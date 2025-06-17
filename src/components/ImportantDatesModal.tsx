@@ -1,0 +1,57 @@
+
+import React, { useState } from 'react';
+import { Calendar, X } from 'lucide-react';
+
+const ImportantDatesModal = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const importantDates = [
+    { event: "Paper Submission", date: "15th July 2025" },
+    { event: "Notification of Acceptance", date: "15th August 2025" },
+    { event: "Registration Due", date: "20th August 2025" },
+    { event: "Camera Ready Submission", date: "30th August 2025" },
+    { event: "Conference Date", date: "25th October 2025" }
+  ];
+
+  return (
+    <>
+      {/* Fixed Button on Left Border */}
+      <button
+        onClick={() => setIsOpen(true)}
+        className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-sustainable-green text-white p-3 rounded-r-lg shadow-lg hover:bg-opacity-90 transition-all z-40 font-inter font-semibold"
+      >
+        <div className="flex items-center space-x-2">
+          <Calendar className="h-5 w-5" />
+          <span className="text-sm">Important Dates</span>
+        </div>
+      </button>
+
+      {/* Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4 relative">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+            >
+              <X className="h-6 w-6" />
+            </button>
+            
+            <h2 className="text-2xl font-inter font-bold text-sustainable-green mb-6">Important Dates</h2>
+            
+            <div className="space-y-4">
+              {importantDates.map((item, index) => (
+                <div key={index} className="border-l-4 border-accent-blue pl-4 py-2">
+                  <h3 className="font-inter font-semibold text-slate-gray">{item.event}</h3>
+                  <p className="text-accent-blue font-medium">{item.date}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default ImportantDatesModal;

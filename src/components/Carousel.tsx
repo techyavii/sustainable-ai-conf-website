@@ -7,13 +7,13 @@ const Carousel = () => {
 
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "/lovable-uploads/b7f32e79-1fe8-4181-9803-594a959e58fd.png",
       title: "Welcome to ICAISD-2025",
       subtitle: "International Conference on AI for Sustainable Development"
     },
     {
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-      title: "Cutting-Edge Research",
+      image: "/lovable-uploads/f3894a94-4a12-40bd-90ad-07c40c1d6145.png",
+      title: "Academic Excellence",
       subtitle: "Bringing together innovative scientists and researchers"
     },
     {
@@ -51,11 +51,11 @@ const Carousel = () => {
             className="w-full h-full bg-cover bg-center relative"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <div className="absolute inset-0 bg-neo-primary bg-opacity-60"></div>
+            <div className="absolute inset-0 bg-sustainable-green bg-opacity-70"></div>
             <div className="absolute inset-0 flex items-center justify-center text-center text-white">
               <div className="max-w-4xl px-4">
-                <h1 className="neo-h1 mb-4">{slide.title}</h1>
-                <p className="neo-h3 font-normal">{slide.subtitle}</p>
+                <h1 className="neo-h1 mb-4 font-inter font-bold">{slide.title}</h1>
+                <p className="neo-h3 font-normal font-inter">{slide.subtitle}</p>
               </div>
             </div>
           </div>
@@ -65,13 +65,13 @@ const Carousel = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-neo-secondary transition-colors"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-accent-blue transition-colors"
       >
         <ChevronLeft className="h-8 w-8" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-neo-secondary transition-colors"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-accent-blue transition-colors"
       >
         <ChevronRight className="h-8 w-8" />
       </button>
@@ -83,7 +83,7 @@ const Carousel = () => {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentSlide ? 'bg-neo-secondary' : 'bg-white bg-opacity-50'
+              index === currentSlide ? 'bg-accent-blue' : 'bg-white bg-opacity-50'
             }`}
           />
         ))}

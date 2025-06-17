@@ -22,8 +22,14 @@ export default {
 			fontFamily: {
 				'montserrat': ['Montserrat', 'sans-serif'],
 				'opensans': ['Open Sans', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'ibm-plex': ['IBM Plex Sans', 'sans-serif'],
 			},
 			colors: {
+				'sustainable-green': '#0f5132',
+				'slate-gray': '#334155',
+				'soft-sand': '#fefae0',
+				'accent-blue': '#60a5fa',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

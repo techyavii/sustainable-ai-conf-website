@@ -10,6 +10,9 @@ import PaperSubmission from "./pages/PaperSubmission";
 import Registration from "./pages/Registration";
 import Publications from "./pages/Publications";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Downloads from "./pages/Downloads";
+import Venue from "./pages/Venue";
+import Committee from "./pages/Committee";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +30,9 @@ const App = () => (
           <Route path="/registration" element={<Registration />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/downloads" element={<Downloads />} />
+          <Route path="/venue" element={<Venue />} />
+          <Route path="/committee" element={<Committee />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

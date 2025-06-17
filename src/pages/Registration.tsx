@@ -51,66 +51,66 @@ const Registration = () => {
     <Layout>
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h1 className="neo-h1 text-neo-primary mb-4">Registration</h1>
-          <div className="w-24 h-1 bg-neo-secondary mx-auto mb-6"></div>
+          <h1 className="neo-h1 text-sustainable-green mb-4">Registration</h1>
+          <div className="w-24 h-1 bg-accent-blue mx-auto mb-6"></div>
         </div>
 
-        <div className="bg-white p-8 rounded-lg shadow-sm border border-neo mb-8">
-          <h2 className="neo-h2 text-neo-primary mb-6">Registration Process</h2>
-          <p className="neo-body text-neo-muted leading-relaxed mb-4">
+        <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-8">
+          <h2 className="neo-h2 text-sustainable-green mb-6">Registration Process</h2>
+          <p className="neo-body text-slate-gray leading-relaxed mb-4">
             <strong>Step 1 – Registration Fee:</strong> It is mandatory for at least one author of an accepted paper to register in order for the paper to appear in the proceedings and included in the Technical Program. Fee includes listing the papers online in the International Journal/Conference Proceedings.
           </p>
-          <p className="neo-body text-neo-muted leading-relaxed">
+          <p className="neo-body text-slate-gray leading-relaxed">
             Kindly pay the registration fees through online transaction only and mail us the receipt/transaction number along with your paper id and registered author id card.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="bg-neo-accent p-8 rounded-lg">
-            <h2 className="neo-h2 text-neo-primary mb-6">Registration Benefits</h2>
-            <p className="neo-body text-neo-muted mb-4">
+          <div className="bg-soft-sand p-8 rounded-lg">
+            <h2 className="neo-h2 text-sustainable-green mb-6">Registration Benefits</h2>
+            <p className="neo-body text-slate-gray mb-4">
               <strong>Author/Co-Author Registration Fee Includes:</strong>
             </p>
             <ul className="space-y-2">
               {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-neo-secondary mr-2">•</span>
-                  <span className="neo-body text-neo-muted">{benefit}</span>
+                  <span className="text-accent-blue mr-2">•</span>
+                  <span className="neo-body text-slate-gray">{benefit}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="bg-neo-primary text-white p-8 rounded-lg">
-            <h2 className="neo-h2 mb-6">Important Note</h2>
-            <p className="neo-body mb-4">
+          <div className="bg-sustainable-green text-white p-8 rounded-lg">
+            <h2 className="neo-h2 mb-6 text-white">Important Note</h2>
+            <p className="neo-body mb-4 text-white">
               **The Conference will be in Hybrid mode
             </p>
-            <p className="neo-body">
+            <p className="neo-body text-white">
               <strong>Conference Venue:</strong> ONLINE MODE via ZOOM Platform
             </p>
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-sm border border-neo overflow-hidden mb-8">
-          <div className="bg-neo-primary text-white p-6">
-            <h2 className="neo-h2 text-center">Registration Fee For ICAISD-2025</h2>
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-8">
+          <div className="bg-sustainable-green text-white p-6">
+            <h2 className="neo-h2 text-center text-white">Registration Fee For ICAISD-2025</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-neo-accent">
+              <thead className="bg-soft-sand">
                 <tr>
-                  <th className="px-6 py-4 text-left neo-h3 text-neo-primary">Category</th>
-                  <th className="px-6 py-4 text-center neo-h3 text-neo-primary">Early Registration<br/>(Before 30th July 2025)</th>
-                  <th className="px-6 py-4 text-center neo-h3 text-neo-primary">Late Registration<br/>(After 30th July 2025)</th>
+                  <th className="px-6 py-4 text-left neo-h3 text-sustainable-green">Category</th>
+                  <th className="px-6 py-4 text-center neo-h3 text-sustainable-green">Early Registration<br/>(Before 30th July 2025)</th>
+                  <th className="px-6 py-4 text-center neo-h3 text-sustainable-green">Late Registration<br/>(After 30th July 2025)</th>
                 </tr>
               </thead>
               <tbody>
                 {registrationFees.map((fee, index) => (
                   <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                    <td className="px-6 py-4 neo-body text-neo-muted">{fee.category}</td>
-                    <td className="px-6 py-4 text-center neo-body font-semibold text-neo-secondary">{fee.early}</td>
-                    <td className="px-6 py-4 text-center neo-body font-semibold text-neo-secondary">{fee.late}</td>
+                    <td className="px-6 py-4 neo-body text-slate-gray">{fee.category}</td>
+                    <td className="px-6 py-4 text-center neo-body font-semibold text-accent-blue">{fee.early}</td>
+                    <td className="px-6 py-4 text-center neo-body font-semibold text-accent-blue">{fee.late}</td>
                   </tr>
                 ))}
               </tbody>
@@ -118,14 +118,14 @@ const Registration = () => {
           </div>
         </div>
 
-        <div className="text-center bg-neo-accent p-8 rounded-lg">
-          <h2 className="neo-h2 text-neo-primary mb-4">Ready to Register?</h2>
-          <p className="neo-body text-neo-muted mb-6">
+        <div className="text-center bg-soft-sand p-8 rounded-lg">
+          <h2 className="neo-h2 text-sustainable-green mb-4">Ready to Register?</h2>
+          <p className="neo-body text-slate-gray mb-6">
             Contact us for payment details and registration process
           </p>
           <a 
             href="mailto:icaisd.conference@gmail.com"
-            className="inline-block bg-neo-secondary text-white px-8 py-3 rounded-lg neo-button hover:bg-opacity-90 transition-colors"
+            className="inline-block bg-accent-blue text-white px-8 py-3 rounded-lg neo-button hover:bg-blue-600 transition-colors"
           >
             Contact for Registration
           </a>

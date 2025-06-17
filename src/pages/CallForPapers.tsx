@@ -94,35 +94,35 @@ const CallForPapers = () => {
     <Layout>
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h1 className="neo-h1 text-neo-primary mb-4">Call for Papers</h1>
-          <div className="w-24 h-1 bg-neo-secondary mx-auto mb-6"></div>
+          <h1 className="neo-h1 text-sustainable-green mb-4">Call for Papers</h1>
+          <div className="w-24 h-1 bg-accent-blue mx-auto mb-6"></div>
         </div>
 
-        <div className="bg-white p-8 rounded-lg shadow-sm border border-neo mb-8">
-          <p className="neo-body text-neo-muted leading-relaxed mb-6">
+        <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 mb-8">
+          <p className="neo-body text-slate-gray leading-relaxed mb-6">
             The scope of this conference is to provide a platform for researchers, engineers, academicians as well as industrial professionals from all over the world to present their research results and development activities in various topics of Engineering and Technology, Sciences and Social-Sciences, Software Engineering and Automation, Data-Driven Intelligent Systems, Networks and Data Communication, Internet Of Things, Engineering Sciences.
           </p>
-          <p className="neo-body text-neo-muted leading-relaxed">
+          <p className="neo-body text-slate-gray leading-relaxed">
             It allows participants an opportunity to discuss the recent developments in the field of solidification computer science and management and review challenges faced by the community in the 21st century. The conference consists of different tracks which are listed below:
           </p>
         </div>
 
         {tracks.map((track, index) => (
-          <div key={index} className="mb-8 bg-neo-accent p-8 rounded-lg">
-            <h2 className="neo-h2 text-neo-primary mb-6">{track.title}</h2>
+          <div key={index} className="mb-8 bg-soft-sand p-8 rounded-lg">
+            <h2 className="neo-h2 text-sustainable-green mb-6">{track.title}</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {track.topics.map((topic, topicIndex) => (
                 <div key={topicIndex} className="flex items-start">
-                  <span className="text-neo-secondary mr-2">•</span>
-                  <span className="neo-body text-neo-muted">{topic}</span>
+                  <span className="text-accent-blue mr-2">•</span>
+                  <span className="neo-body text-slate-gray">{topic}</span>
                 </div>
               ))}
             </div>
           </div>
         ))}
 
-        <div className="bg-neo-primary text-white p-8 rounded-lg">
-          <p className="neo-body leading-relaxed">
+        <div className="bg-sustainable-green text-white p-8 rounded-lg">
+          <p className="neo-body leading-relaxed text-white">
             All papers will undergo a blind peer-review process and all accepted papers will be published in the conference proceedings. The conference organizer encourages submissions of academic and research papers that consider the multidisciplinary/interdisciplinary themes covering the Management, Science and Social Studies, through one of the following sub-themes, although submissions of other topics for consideration are also welcome.
           </p>
         </div>

@@ -15,14 +15,15 @@ const ImportantDatesModal = () => {
 
   return (
     <>
-      {/* Fixed Button on Left Border */}
+      {/* Fixed Vertical Button on Left Border */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-sustainable-green text-white p-3 rounded-r-lg shadow-lg hover:bg-opacity-90 transition-all z-40 font-inter font-semibold"
+        className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-sustainable-green text-white p-2 rounded-r-lg shadow-lg hover:bg-opacity-90 transition-all z-40 font-inter font-semibold"
+        style={{ writingMode: 'vertical-lr', textOrientation: 'mixed' }}
       >
-        <div className="flex items-center space-x-2">
+        <div className="flex flex-col items-center space-y-2">
           <Calendar className="h-5 w-5" />
-          <span className="text-sm">Important Dates</span>
+          <span className="text-sm whitespace-nowrap">Important Dates</span>
         </div>
       </button>
 

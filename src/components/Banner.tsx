@@ -30,11 +30,13 @@ const Banner = () => {
                 alt="Adroid"
                 className="h-8 object-contain"
               />
+              <div className=''>
               <img
                 src="/lovable-uploads/3e93bd98-669b-4b27-930f-31e35dc847ed.png"
                 alt="AdroidCMS"
                 className="h-8 object-contain"
               />
+              </div>
               <img
                 src="/lovable-uploads/61e25d68-1de4-48e1-9948-0a3b0003598d.png"
                 alt="Adroid Conference Proceedings"

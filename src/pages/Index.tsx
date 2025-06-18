@@ -27,28 +27,11 @@ const Index = () => {
         <section className="mb-16">
           <div className="bg-soft-sand rounded-lg p-8">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6 text-center">ICAISD-2025 will be organised in Online Mode</h2>
-            {/* <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <FileText className="h-12 w-12 text-accent-blue mx-auto mb-4" />
-                <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">SCOPUS Publication</h3>
-                <p className="text-slate-gray font-ibm-plex">All accepted papers will be published in SCOPUS proceeding, SCI journals and SCOPUS journals</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <Users className="h-12 w-12 text-accent-blue mx-auto mb-4" />
-                <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">Expert Review</h3>
-                <p className="text-slate-gray font-ibm-plex">Double blinded peer review process by international experts</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <Calendar className="h-12 w-12 text-accent-blue mx-auto mb-4" />
-                <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">Online Mode</h3>
-                <p className="text-slate-gray font-ibm-plex">Convenient online participation via ZOOM platform</p>
-              </div>
-            </div> */}
           </div>
         </section>
 
         {/* Indexing Details */}
-        {/* <section className="mb-16">
+        <section className="mb-16">
           <div className="text-center bg-white p-8 rounded-lg shadow-sm border border-gray-200">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">Indexing Details</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
@@ -62,19 +45,33 @@ const Index = () => {
                 alt="Google Scholar" 
                 className="h-12 object-contain"
               />
+              <img 
+                src="/lovable-uploads/007f3735-c7aa-4913-93fa-08c32237041d.png" 
+                alt="Scopus" 
+                className="h-12 object-contain"
+              />
             </div>
             <p className="text-lg text-slate-gray font-ibm-plex">
               <strong>INSPEC, Google Scholar</strong> and other leading databases with a <strong>DOI Number</strong>
             </p>
           </div>
-        </section> */}
+        </section>
 
         {/* About Section - Centered */}
         <section className="mb-16 text-center">
           <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">About the Conference</h2>
           <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 max-w-5xl mx-auto">
             <p className="text-lg text-slate-gray font-ibm-plex leading-relaxed text-left">
-              ICAISD 2025 is organised with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Sciences, Computational Methods and Techniques to a common platform. All the accepted papers (after double blinded peer review) will be published in Adroid Conference Series (Indexing: INSPEC, Google Scholar and other leading databases with a DOI Number); All books published in the series are submitted for consideration in SCOPUS) and some high-quality selected papers will be published in the SCOPUS indexed Proceedings.
+              ICAISD 2025 is organised with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Sciences, Computational Methods and Techniques to a common platform. All the accepted papers (after double blinded peer review) will be published in{' '}
+              <a 
+                href="https://www.adroidcms.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-accent-blue hover:underline"
+              >
+                Adroid Conference Series
+              </a>{' '}
+              (Indexing: INSPEC, Google Scholar and other leading databases with a DOI Number); All books published in the series are submitted for consideration in SCOPUS) and some high-quality selected papers will be published in the SCOPUS indexed Proceedings.
             </p>
           </div>
         </section>
@@ -109,8 +106,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        
       </div>
     </Layout>
   );

@@ -18,6 +18,25 @@ const Banner = () => {
             <div className="neo-body font-semibold text-white max-md:text-base md:text-2xl">
               October 25-26th, 2025 | Mode: ONLINE (ZOOM)
             </div>
+            
+            {/* Logos Section */}
+            <div className="flex justify-center items-center gap-4 md:gap-8 mt-4">
+              <img 
+                src="/lovable-uploads/3e93bd98-669b-4b27-930f-31e35dc847ed.png" 
+                alt="AdroidCMS" 
+                className="h-8 md:h-12 object-contain"
+              />
+              <img 
+                src="/lovable-uploads/4f5151ec-89e7-409b-9e96-54d75e64c96d.png" 
+                alt="Adroid" 
+                className="h-8 md:h-12 object-contain"
+              />
+              <img 
+                src="/lovable-uploads/61e25d68-1de4-48e1-9948-0a3b0003598d.png" 
+                alt="Adroid Conference Proceedings" 
+                className="h-8 md:h-12 object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -16,11 +16,11 @@ const Carousel = () => {
       title: "Academic Excellence",
       subtitle: "Bringing together innovative scientists and researchers"
     },
-    {
-      image: "/lovable-uploads/b7f32e79-1fe8-4181-9803-594a959e58fd.png",
-      title: "SCOPUS Publication",
-      subtitle: "All accepted papers published in SCOPUS proceedings"
-    }
+    // {
+    //   image: "/lovable-uploads/b7f32e79-1fe8-4181-9803-594a959e58fd.png",
+    //   title: "SCOPUS Publication",
+    //   subtitle: "All accepted papers published in SCOPUS proceedings"
+    // }
   ];
 
   useEffect(() => {

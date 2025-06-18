@@ -27,7 +27,7 @@ const Downloads = () => {
               <FileText className="h-16 w-16 text-accent-blue mx-auto mb-4" />
               <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-4">Paper Template</h3>
               <p className="text-slate-gray mb-6 font-ibm-plex">
-                Download the official Springer paper template for ICAISD-2025. 
+                Download the official paper template for ICAISD-2025. 
                 Papers must follow this format (minimum 8 pages, maximum 12 pages).
               </p>
               <button onClick={() => handleDownload('/downloads/ACS_EST_Conf_Article_Template.docx')} className="bg-sustainable-green text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center mx-auto font-inter font-semibold">

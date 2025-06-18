@@ -27,7 +27,7 @@ const Index = () => {
         <section className="mb-16">
           <div className="bg-soft-sand rounded-lg p-8">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6 text-center">ICAISD-2025 will be organised in Online Mode</h2>
-            <div className="grid md:grid-cols-3 gap-8 text-center">
+            {/* <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <FileText className="h-12 w-12 text-accent-blue mx-auto mb-4" />
                 <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">SCOPUS Publication</h3>
@@ -43,12 +43,12 @@ const Index = () => {
                 <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-2">Online Mode</h3>
                 <p className="text-slate-gray font-ibm-plex">Convenient online participation via ZOOM platform</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
         {/* Indexing Details */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <div className="text-center bg-white p-8 rounded-lg shadow-sm border border-gray-200">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">Indexing Details</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
@@ -67,7 +67,7 @@ const Index = () => {
               <strong>INSPEC, Google Scholar</strong> and other leading databases with a <strong>DOI Number</strong>
             </p>
           </div>
-        </section>
+        </section> */}
 
         {/* About Section - Centered */}
         <section className="mb-16 text-center">
@@ -79,23 +79,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Important Dates */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6 text-center">Important Dates</h2>
-          <div className="bg-soft-sand p-8 rounded-lg">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {importantDates.map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
-                  <h3 className="text-lg font-inter font-semibold text-sustainable-green mb-2">{item.event}</h3>
-                  <p className="text-accent-blue font-ibm-plex font-semibold">{item.date}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <div className="bg-sustainable-green text-white p-8 rounded-lg">
             <h2 className="text-3xl font-inter font-bold mb-4 text-white">Ready to Submit Your Paper?</h2>
             <p className="text-lg mb-6 font-ibm-plex text-white">Join researchers from around the world at ICAISD-2025</p>
@@ -109,6 +94,23 @@ const Index = () => {
             </a>
           </div>
         </section>
+
+        {/* Important Dates */}
+        <section className="">
+          <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6 text-center">Important Dates</h2>
+          <div className="bg-soft-sand p-8 rounded-lg">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {importantDates.map((item, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
+                  <h3 className="text-lg font-inter font-semibold text-sustainable-green mb-2">{item.event}</h3>
+                  <p className="text-accent-blue font-ibm-plex font-semibold">{item.date}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        
       </div>
     </Layout>
   );

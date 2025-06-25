@@ -26,12 +26,15 @@ const Index = () => {
         {/* Conference Info Section */}
         <section className="mb-16">
           <div className="bg-soft-sand rounded-lg p-8">
-            <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6 text-center">ICAISD-2025 will be organised in Online Mode</h2>
+            <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-4 text-center">ICAISD-2025 will be organised in Hybrid Mode</h2>
+            <p className="text-lg text-slate-gray font-ibm-plex text-center">
+              Organized by Jaypee University Anoopshahr, UP, India
+            </p>
           </div>
         </section>
 
         {/* Indexing Details */}
-        {/* <section className="mb-16">
+        <section className="mb-16">
           <div className="text-center bg-white p-8 rounded-lg shadow-sm border border-gray-200">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">Indexing Details</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
@@ -55,14 +58,14 @@ const Index = () => {
               <strong>INSPEC, Google Scholar</strong> and other leading databases with a <strong>DOI Number</strong>
             </p>
           </div>
-        </section> */}
+        </section>
 
         {/* About Section - Centered */}
         <section className="mb-16 text-center">
           <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">About the Conference</h2>
           <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 max-w-5xl mx-auto">
             <p className="text-lg text-slate-gray font-ibm-plex leading-relaxed text-left">
-              ICAISD 2025 is organised with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Sciences, Computational Methods and Techniques to a common platform. All the accepted papers (after double blinded peer review) will be published in{' '}
+              ICAISD 2025 is organised by Jaypee University Anoopshahr, UP, India with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Sciences, Computational Methods and Techniques to a common platform. All the accepted papers (after double blinded peer review) will be published in{' '}
               <a 
                 href="https://www.adroidcms.com" 
                 target="_blank" 

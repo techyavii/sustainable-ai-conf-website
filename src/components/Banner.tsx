@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Banner = () => {
@@ -10,7 +11,7 @@ const Banner = () => {
         }}
       >
         <div className="absolute inset-0 bg-sustainable-green bg-opacity-80"></div>
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between text-white py-4 max-w-full px-11 mx-auto h-full">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between text-white py-6 max-w-full px-11 mx-auto h-full">
           
           {/* Left Logo (Adroid) */}
           <div className="hidden md:flex items-center justify-start w-1/3">
@@ -48,8 +49,11 @@ const Banner = () => {
               International Conference on Artificial Intelligence for Sustainable Development
             </div>
             <div className="neo-h3 mb-2 text-white max-md:text-base md:text-3xl">(ICAISD-2025)</div>
-            <div className="neo-body font-semibold text-white max-md:text-base md:text-2xl">
-              October 25-26th, 2025 | Mode: ONLINE (ZOOM)
+            <div className="neo-body font-semibold text-white max-md:text-sm md:text-xl mb-1">
+              October 25-26th, 2025 | Mode: HYBRID
+            </div>
+            <div className="neo-body font-semibold text-white max-md:text-xs md:text-lg">
+              Organized by: Jaypee University Anoopshahr, UP, India
             </div>
           </div>
 

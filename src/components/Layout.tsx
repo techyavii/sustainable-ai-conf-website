@@ -25,8 +25,11 @@ const Layout = ({ children }: LayoutProps) => {
               <p className="text-gray-200 mb-4 font-ibm-plex">
                 International Conference on Artificial Intelligence for Sustainable Development
               </p>
+              <p className="text-gray-200 mb-2 font-ibm-plex">
+                October 25-26th, 2025 | Hybrid Mode
+              </p>
               <p className="text-gray-200 mb-4 font-ibm-plex">
-                October 25-26th, 2025 | Online Mode via ZOOM
+                Organized by: Jaypee University Anoopshahr, UP, India
               </p>
               <div className="flex items-center text-gray-200 mb-2 font-ibm-plex">
                 <Mail className="h-4 w-4 mr-2" />

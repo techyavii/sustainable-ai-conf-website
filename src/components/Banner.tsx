@@ -16,16 +16,17 @@ const Banner = () => {
           
           {/* Left Logos (Adroid and Jaypee University) */}
           <div className="hidden md:flex items-center justify-start gap-4 w-1/3">
+          <img
+              src="/lovable-uploads/bd52a350-b560-47d3-b06a-0d4ba86d31ce.png"
+              alt="Jaypee University Anoopshahr"
+              className="h-8 md:h-20 object-contain"
+            />
             <img
               src="/lovable-uploads/4f5151ec-89e7-409b-9e96-54d75e64c96d.png"
               alt="Adroid"
               className="h-8 md:h-12 object-contain"
             />
-            <img
-              src="/lovable-uploads/bd52a350-b560-47d3-b06a-0d4ba86d31ce.png"
-              alt="Jaypee University Anoopshahr"
-              className="h-8 md:h-12 object-contain"
-            />
+            
           </div>
 
           {/* Center Text */}
@@ -33,15 +34,16 @@ const Banner = () => {
             {/* Mobile logo section */}
             <div className="flex md:hidden items-center justify-center gap-4 mb-3 flex-wrap">
               <img
-                src="/lovable-uploads/4f5151ec-89e7-409b-9e96-54d75e64c96d.png"
-                alt="Adroid"
-                className="h-8 object-contain"
-              />
-              <img
                 src="/lovable-uploads/bd52a350-b560-47d3-b06a-0d4ba86d31ce.png"
                 alt="Jaypee University Anoopshahr"
                 className="h-8 object-contain"
               />
+              <img
+                src="/lovable-uploads/4f5151ec-89e7-409b-9e96-54d75e64c96d.png"
+                alt="Adroid"
+                className="h-8 object-contain"
+              />
+              
               <div className=''>
               <img
                 src="/lovable-uploads/3e93bd98-669b-4b27-930f-31e35dc847ed.png"

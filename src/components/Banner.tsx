@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 
 const Banner = () => {
@@ -13,11 +14,16 @@ const Banner = () => {
         <div className="absolute inset-0 bg-sustainable-green bg-opacity-80"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between text-white py-6 max-w-full px-11 mx-auto h-full">
           
-          {/* Left Logo (Adroid) */}
-          <div className="hidden md:flex items-center justify-start w-1/3">
+          {/* Left Logos (Adroid and Jaypee University) */}
+          <div className="hidden md:flex items-center justify-start gap-4 w-1/3">
             <img
               src="/lovable-uploads/4f5151ec-89e7-409b-9e96-54d75e64c96d.png"
               alt="Adroid"
+              className="h-8 md:h-12 object-contain"
+            />
+            <img
+              src="/lovable-uploads/bd52a350-b560-47d3-b06a-0d4ba86d31ce.png"
+              alt="Jaypee University Anoopshahr"
               className="h-8 md:h-12 object-contain"
             />
           </div>
@@ -25,10 +31,15 @@ const Banner = () => {
           {/* Center Text */}
           <div className="flex flex-col items-center text-center w-full md:w-4/5">
             {/* Mobile logo section */}
-            <div className="flex md:hidden items-center justify-center gap-4 mb-3">
+            <div className="flex md:hidden items-center justify-center gap-4 mb-3 flex-wrap">
               <img
                 src="/lovable-uploads/4f5151ec-89e7-409b-9e96-54d75e64c96d.png"
                 alt="Adroid"
+                className="h-8 object-contain"
+              />
+              <img
+                src="/lovable-uploads/bd52a350-b560-47d3-b06a-0d4ba86d31ce.png"
+                alt="Jaypee University Anoopshahr"
                 className="h-8 object-contain"
               />
               <div className=''>

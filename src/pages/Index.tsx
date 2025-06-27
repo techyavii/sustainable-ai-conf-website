@@ -34,7 +34,7 @@ const Index = () => {
         </section>
 
         {/* Indexing Details */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <div className="text-center bg-white p-8 rounded-lg shadow-sm border border-gray-200">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">Indexing Details</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-4">
@@ -58,7 +58,7 @@ const Index = () => {
               <strong>INSPEC, Google Scholar</strong> and other leading databases with a <strong>DOI Number</strong>
             </p>
           </div>
-        </section>
+        </section> */}
 
         {/* About Section - Centered */}
         <section className="mb-16 text-center">

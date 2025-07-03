@@ -28,7 +28,7 @@ const Index = () => {
           <div className="bg-soft-sand rounded-lg p-8">
             <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-4 text-center">ICAISD-2025 will be organised in Hybrid Mode</h2>
             <p className="text-2xl text-slate-gray font-ibm-plex text-center">
-              Organized by Jaypee University Anoopshahr, UP, India
+              Organized by Jaypee University Anoopshahr, UP, India in association with SAGE University, Indore, India
             </p>
           </div>
         </section>
@@ -38,9 +38,9 @@ const Index = () => {
           <h2 className="text-3xl font-inter font-bold text-sustainable-green mb-6">About the Conference</h2>
           <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 max-w-5xl mx-auto">
             <p className="text-lg text-slate-gray font-ibm-plex leading-relaxed text-left">
-              ICAISD 2025 is organised by Jaypee University Anoopshahr, UP, India with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Sciences, Computational Methods and Techniques to a common platform. All the accepted papers (after double blinded peer review) will be published in{' '}
+              ICAISD 2025 is organised by Jaypee University Anoopshahr, UP, India in association with SAGE University, Indore, India with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Sciences, Computational Methods and Techniques to a common platform. All the accepted papers (after double blinded peer review) will be published in{' '}
               <a 
-                href="https://www.adroidcms.com" 
+                href="https://conferenceseries.adroidjournals.com/index.php/ACSET" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-accent-blue hover:underline"

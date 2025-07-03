@@ -22,6 +22,11 @@ const Banner = () => {
               className="h-8 md:h-20 object-contain"
             />
             <img
+                src="/lovable-uploads/SAGE_UNIVERSITY.png"
+                alt="SAGE_UNIVERSITY"
+                className="h-8 md:h-20 object-contain"
+              />
+            <img
               src="/lovable-uploads/4f5151ec-89e7-409b-9e96-54d75e64c96d.png"
               alt="Adroid"
               className="h-8 md:h-12 object-contain"
@@ -36,6 +41,11 @@ const Banner = () => {
               <img
                 src="/lovable-uploads/bd52a350-b560-47d3-b06a-0d4ba86d31ce.png"
                 alt="Jaypee University Anoopshahr"
+                className="h-8 object-contain"
+              />
+              <img
+                src="/lovable-uploads/SAGE_UNIVERSITY.png"
+                alt="SAGE_UNIVERSITY"
                 className="h-8 object-contain"
               />
               <img
@@ -66,7 +76,7 @@ const Banner = () => {
               October 25-26th, 2025 | Mode: HYBRID
             </div>
             <div className="neo-body font-semibold text-white max-md:text-xs md:text-lg">
-              Organized by: Jaypee University Anoopshahr, UP, India
+              Organized by: Jaypee University Anoopshahr, UP, India in association with SAGE University, Indore, India
             </div>
           </div>
 

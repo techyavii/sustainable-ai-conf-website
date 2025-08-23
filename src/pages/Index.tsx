@@ -7,10 +7,10 @@ import { Calendar, Users, FileText } from 'lucide-react';
 
 const Index = () => {
   const importantDates = [
-    { event: "Paper Submission Deadline", date: "20th August 2025" },
-    { event: "Acceptance Notification Due", date: "10th September 2025" },
+    { event: "Paper Submission Deadline", date: "10th September 2025" },
+    { event: "Acceptance Notification Due", date: "25th September 2025" },
     { event: "Registration Due", date: "30th August 2025" },
-    { event: "Camera Ready Submission", date: "10th September 2025" },
+    { event: "Camera Ready Submission", date: "30th September 2025" },
     { event: "Conference Date", date: "25th October 2025" }
   ];
 

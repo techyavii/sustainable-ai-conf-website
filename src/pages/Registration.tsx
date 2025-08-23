@@ -113,8 +113,8 @@ const Registration = () => {
               <thead className="bg-soft-sand">
                 <tr>
                   <th className="px-6 py-4 text-left neo-h3 text-sustainable-green">Category</th>
-                  <th className="px-6 py-4 text-center neo-h3 text-sustainable-green">Early Registration<br/>(Before 30th July 2025)</th>
-                  <th className="px-6 py-4 text-center neo-h3 text-sustainable-green">Late Registration<br/>(After 30th July 2025)</th>
+                  <th className="px-6 py-4 text-center neo-h3 text-sustainable-green">Early Registration<br/>(Before 30th August 2025)</th>
+                  <th className="px-6 py-4 text-center neo-h3 text-sustainable-green">Late Registration<br/>(After 30th August 2025)</th>
                 </tr>
               </thead>
               <tbody>

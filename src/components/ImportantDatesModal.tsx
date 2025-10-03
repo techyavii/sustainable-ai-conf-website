@@ -6,10 +6,10 @@ const ImportantDatesModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const importantDates = [
-    { event: "Paper Submission Deadline", date: "20th August 2025" },
-    { event: "Acceptance Notification Due", date: "10th September 2025" },
-    { event: "Registration Due", date: "30th August 2025" },
-    { event: "Camera Ready Submission", date: "10th September 2025" },
+    { event: "Paper Submission Deadline", date: "5th October 2025" },
+    { event: "Acceptance Notification Due", date: "12th October 2025" },
+    { event: "Registration Due", date: "15th October 2025" },
+    { event: "Camera Ready Submission", date: "20th October 2025" },
     { event: "Conference Date", date: "25th October 2025" }
   ];
 

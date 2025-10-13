@@ -37,7 +37,9 @@ const Downloads = () => {
             </div>
           </div>
 
-          <div className="bg-soft-sand p-8 rounded-lg border border-gray-200">
+          
+
+          {/* <div className="bg-soft-sand p-8 rounded-lg border border-gray-200">
             <div className="text-center">
               <FileText className="h-16 w-16 text-accent-blue mx-auto mb-4" />
               <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-4">Conference Brochure</h3>
@@ -48,6 +50,24 @@ const Downloads = () => {
               <button className="bg-sustainable-green text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center mx-auto font-inter font-semibold">
                 <Download className="h-5 w-5 mr-2" />
                 Download Brochure
+              </button>
+            </div>
+          </div> */}
+
+          <div className="bg-soft-sand p-8 rounded-lg border border-gray-200">
+            <div className="text-center">
+              <FileText className="h-16 w-16 text-accent-blue mx-auto mb-4" />
+              <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-4">Official PPT Template</h3>
+              <p className="text-slate-gray mb-6 font-ibm-plex">
+                Download the official presentation template for ICAISD-2025. 
+                All presenters must use this format for their final presentations.
+              </p>
+              <button
+                onClick={() => handleDownload('/downloads/ICAISD_2025_PPT_Template.pptx')}
+                className="bg-sustainable-green text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center mx-auto font-inter font-semibold"
+              >
+                <Download className="h-5 w-5 mr-2" />
+                Download PPT Template
               </button>
             </div>
           </div>

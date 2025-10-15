@@ -71,7 +71,30 @@ const Downloads = () => {
               </button>
             </div>
           </div>
+
+
+          <div className="bg-soft-sand p-8 rounded-lg border border-gray-200">
+            <div className="text-center">
+              <FileText className="h-16 w-16 text-accent-blue mx-auto mb-4" />
+              <h3 className="text-xl font-inter font-semibold text-sustainable-green mb-4">
+                Paper Presentation Schedule
+              </h3>
+              <p className="text-slate-gray mb-6 font-ibm-plex">
+                Download the official paper presentation schedule for ICAISD-2025. 
+                Please check your slot and session details carefully before the event.
+              </p>
+              <button
+                onClick={() => handleDownload('/downloads/Paper Presentation Schedule_ICAISD 2025.docx')}
+                className="bg-sustainable-green text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center mx-auto font-inter font-semibold"
+              >
+                <Download className="h-5 w-5 mr-2" />
+                Download Schedule
+              </button>
+            </div>
+          </div>
+
         </div>
+
 
         <div className="mt-12 bg-white p-8 rounded-lg border border-gray-200">
           <h2 className="text-2xl font-inter font-bold text-sustainable-green mb-6">Submission Guidelines</h2>

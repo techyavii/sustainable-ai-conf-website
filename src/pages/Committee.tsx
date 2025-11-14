@@ -16,12 +16,6 @@ const Committee = () => {
       {
         name: "Prof. Nishant Shrivastava",
         affiliation: "JU Anoopshahr, India"
-      }
-    ],
-    coChairs: [
-      {
-        name: "Prof. Praveen Kumar Bhanodia",
-        affiliation: "Acropolis Institute of Technology and Research"
       },
       {
         name:"Nishant Shrivastava",
@@ -44,9 +38,12 @@ const Committee = () => {
         affiliation: "University of the Cumberlands, USA"
       }
       
-
-
-
+    ],
+    coChairs: [
+      {
+        name: "Prof. Praveen Kumar Bhanodia",
+        affiliation: "Acropolis Institute of Technology and Research"
+      }
     ],
     steeringCommittee: [
       {

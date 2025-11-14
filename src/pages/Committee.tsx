@@ -22,7 +22,31 @@ const Committee = () => {
       {
         name: "Prof. Praveen Kumar Bhanodia",
         affiliation: "Acropolis Institute of Technology and Research"
+      },
+      {
+        name:"Nishant Shrivastava",
+        affiliation:"JU Anoopshahr, India"
+      },
+      {
+        name: "Jitendra Saxena",
+        affiliation: "SAGE University, India"
+      },
+      {
+        name: "Aditya Khamparia",
+        affiliation: "Babasaheb Bhimrao Ambedkar University, India"
+      },
+      {
+        name: "Mahmood Afzal Hussain",
+        affiliation: "University of the Cumberlands, USA"
+      },
+      {
+        name: "Anand Kadukuntla",
+        affiliation: "University of the Cumberlands, USA"
       }
+      
+
+
+
     ],
     steeringCommittee: [
       {

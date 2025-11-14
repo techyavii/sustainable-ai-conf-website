@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
-import { Users, Crown, UserCheck, Settings, BookOpen, Calendar, UserRoundCheck } from 'lucide-react';
+import { Users, Crown, UserCheck, Settings, BookOpen, Calendar, UserRoundCheck, UserCheck2Icon, UserPlus } from 'lucide-react';
 
 const Committee = () => {
   const committeeData = {
@@ -11,6 +11,12 @@ const Committee = () => {
         title: "Vice-Chancellor",
         affiliation: "JU Anoopshahr, India"
       }
+    ],
+    organizingChairs: [
+      {
+        name: "Deepak Gupta",
+        affiliation: "Maharaja Agrasen Institute of Technology, Delhi, India"
+      },
     ],
     generalChairs: [
       {
@@ -213,7 +219,12 @@ const Committee = () => {
           icon={Crown}
           bgColor="bg-gradient-to-r from-soft-sand to-amber-50"
         />
-
+        {/* Organizing Chairs */}
+        <CommitteeSection 
+          title="Organizing Chairs" 
+          members={committeeData.organizingChairs} 
+          icon={UserPlus}
+        />
         {/* General Chairs */}
         <CommitteeSection 
           title="General Chairs" 
